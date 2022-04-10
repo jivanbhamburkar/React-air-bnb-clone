@@ -8,24 +8,24 @@ import Image from "./components/Image";
 import Cards from "./components/Cards";
 
 function App() {
-  const [show, setShow] = useState(!true);
+  const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] =useState(0);
 
-  // const handleScroll = ()=>{
-  //   const position = window.pageYOffset;
-  //   setScrollPos(position);
-  //   if(position == 10){
-  //     setShow(false);
-  //   }
-  // };
+  const handleScroll = ()=>{
+    const position = window.pageYOffset;
+    setScrollPos(position);
+    if( scrollPos == 1){
+      setShow(false);
+    }
+  };
 
-  // useEffect(()=>{
-  //   window.addEventListener('scroll', handleScroll, {passive: true});
-  //   return()=>{
-  //     window.removeEventListener('scroll', handleScroll);
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScroll);
+    return()=>{
+      window.removeEventListener('scroll', handleScroll);
     
-  //   };
-  // }, []);
+    };
+  }, []);
 
   
   return (
