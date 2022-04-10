@@ -126,10 +126,10 @@ justify-content: space-around;
 }
 .card-down {
   /* padding: 2rem; */
-  background-color: #ff385c;
+  background-color: #d10c30;
   border-radius: 0 0 15px 15px;
   height: 35%;
-  margin: 0;
+  margin: -4px;
   color: white;
   padding: 1rem 3rem 3rem 1rem;
 }
@@ -138,4 +138,21 @@ justify-content: space-around;
   height: 55%;
   border-radius: 15px 15px 0 0;
   margin: 0;
+}
+
+@media screen and (min-width:350px) and (max-width:800) {
+ .app{
+    width: 320px;
+    font-size: small;
+    height: fit-content;
+
+ }   
+ .header1{
+     display:none;
+ }
+ .help{
+     width: 300px;
+     margin:1%;
+     padding: 2%;
+ }
 }
