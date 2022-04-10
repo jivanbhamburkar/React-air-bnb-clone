@@ -129,12 +129,13 @@ justify-content: space-around;
   background-color: #d10c30;
   border-radius: 0 0 15px 15px;
   height: 35%;
-  margin: -4px;
+  margin: -3px 1px 1px 1px;
   color: white;
-  padding: 1rem 3rem 3rem 1rem;
+  padding: 1rem 2rem 3rem 1rem;
+  /* width:80%; */
 }
 .card img {
-  width: 100%;
+  width: 99%;
   height: 55%;
   border-radius: 15px 15px 0 0;
   margin: 0;
