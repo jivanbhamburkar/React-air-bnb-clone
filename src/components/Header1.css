@@ -1,0 +1,83 @@
+.header1{
+    display: flex;
+    justify-content:space-around;
+    background-color: black;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+
+    /*Fixed*/
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; */
+}
+.exp{
+    display: flex;
+    /* flex-flow: column; */
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    margin: 1rem;
+
+}
+.exp p{
+    margin: 1rem;
+}
+.logo1{
+    object-fit: contain;
+    height: 40px;
+}
+.header-mid1{
+display: flex;
+border: 1px solid grey;
+background-color:white;
+width:70%;
+margin: auto;
+border-radius: 30px;
+align-items: center;
+text-align: center;
+
+/* Fixed */
+/* position: fixed;
+top: 100px;
+left: 10px;
+right: 10px;
+width: 60%;
+z-index: 100; */
+
+
+}
+.header-mid1 div{
+    /* border: 1px solid rgb(199, 196, 196);  */
+    padding: 0.9rem;
+    width:100%;
+    background-color:transparent;
+}
+.header-mid1 :hover{
+    /* border: solid grey 1px; */
+    /* padding: 0.9rem; */
+    /* width:100%; */
+    border-radius: 30px;
+    background-color:rgb(226, 219, 219);
+}
+
+.header-mid1 p{
+    font-size:small;
+}
+
+.header-acc1{
+    border: 1px solid grey;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 100px;
+}
+.header1 div{
+    display: flex;
+    margin: 1rem;
+    border-radius: 20px;
+}
