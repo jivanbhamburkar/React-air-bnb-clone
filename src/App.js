@@ -9,25 +9,18 @@ import Cards from "./components/Cards";
 
 function App() {
   const [show, setShow] = useState(true);
-  const [scrollPos, setScrollPos] =useState(0);
 
-  const handleScroll = ()=>{
-    const position = window.pageYOffset;
-    setScrollPos(position);
-    if( scrollPos == 1){
-      setShow(false);
-    }
+  const handleScroll = () => {
+    setShow(false);
   };
 
-  useEffect(()=>{
-    window.addEventListener('scroll', handleScroll);
-    return()=>{
-      window.removeEventListener('scroll', handleScroll);
-    
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  
   return (
     <>
       <div className="app">
@@ -37,7 +30,7 @@ function App() {
             <Search />
           </>
         ) : (
-          <Header show = {show} setShow={setShow}/>
+          <Header show={show} setShow={setShow} />
         )}
         <Help />
         <Image />
