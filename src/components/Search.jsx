@@ -8,8 +8,6 @@ function Search() {
   return (
     <>
       <div className="header-mid1">
-        {/* <input type="text" /> */}
-
         <div>
           <h5>Location</h5>
           <p>Where are you going?</p>
@@ -29,7 +27,6 @@ function Search() {
           <h5>Guests</h5>
           <p>Add Guests</p>
         </div>
-
         <SearchIcon
           sx={{
             fontSize: 30,
@@ -37,7 +34,7 @@ function Search() {
             backgroundColor: pink[500],
             borderRadius: 20,
             padding: 1,
-            margin: 0.5,
+            margin: 0.5
           }}
         />
       </div>

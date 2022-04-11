@@ -22,6 +22,7 @@
 .header-mid {
   display: flex;
   border: 1px solid grey;
+  margin: auto;
 }
 .header-mid > input {
   border: none;
@@ -31,11 +32,18 @@
 .header-acc {
   border: 1px solid grey;
   padding: 0.5rem;
+  border-radius: 30px;
 }
 .header div {
   display: flex;
   margin: 1rem;
   border-radius: 20px;
+}
+.header-r h5 {
+  margin: 1rem;
+}
+.icon {
+  margin-top: 1rem;
 }
 
 /* // Help // */
@@ -49,7 +57,6 @@
   text-align: center;
   color: white;
   padding: 6rem;
-  /* margin-top: 900px; */
 }
 .help p {
   font-size: 2rem;
@@ -113,50 +120,50 @@
 /* // Cards// */
 .cards {
   display: flex;
-flex-flow: row wrap;
-align-items:center;
-justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 .card {
   height: 400px;
   width: 300px;
   margin: 3rem;
-  /* border: solid 1px black; */
   border-radius: 15px;
 }
 .card-down {
-  /* padding: 2rem; */
   background-color: #d10c30;
   border-radius: 0 0 15px 15px;
-  height: 35%;
+  height: 45%;
   margin: -3px 1px 1px 1px;
   color: white;
-  padding: 1rem 2rem 3rem 1rem;
-  /* width:80%; */
+  width: 100%;
+}
+.card-down h2,
+.card-down p {
+  padding: 0.5rem 0 0 1rem;
 }
 .card img {
-  width: 99%;
-  height: 55%;
+  width: 100%;
+  height: 50%;
   border-radius: 15px 15px 0 0;
   margin: 0;
 }
 
-@media screen and (min-width:350px) and (max-width:800) {
- .app{
+@media screen and (min-width: 350px) and (max-width: 800) {
+  .app {
     width: 320px;
     font-size: small;
     height: fit-content;
-
- }   
- .header1{
-     display:none;
- }
- .help{
-     width: 100px;
-     margin:1%;
-     padding: 2%;
- }
- div{
-     width:50%;
- }
+  }
+  .header1 {
+    display: none;
+  }
+  .help {
+    width: 100px;
+    margin: 1%;
+    padding: 2%;
+  }
+  div {
+    width: 50%;
+  }
 }

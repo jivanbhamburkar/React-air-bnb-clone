@@ -19,11 +19,11 @@ function Header1() {
 
         <div className="header-r1">
           <div>
-            <p>Become a host</p>
-            <LanguageIcon />
+            <h5>Become a host</h5>
+            <LanguageIcon className="icon" />
           </div>
           <div className="header-acc1">
-            <DehazeIcon />
+            <DehazeIcon sx={{ color: grey[500], fontSize: 30 }} />
             <AccountCircleIcon sx={{ color: grey[500], fontSize: 30 }} />
           </div>
         </div>
